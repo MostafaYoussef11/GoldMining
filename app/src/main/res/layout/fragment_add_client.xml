@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="5dp"
+    tools:context=".AddClientFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/app_name"
+            app:srcCompat="@drawable/ic_customer">
+
+        </ImageView>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="133dp">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv17"
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="0dp"
+                android:fontFamily="@font/elmessiri"
+                android:gravity="center"
+                android:text="الرقم"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/idClient"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginEnd="15dp"
+                android:fontFamily="@font/elmessiri"
+                android:gravity="center"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/tv17"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="60dp"
+            android:layout_marginRight="10dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/txtNameClinet"
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="0dp"
+                android:fontFamily="@font/elmessiri"
+                android:gravity="center"
+                android:text="الاسم"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <EditText
+                android:id="@+id/edNameClient"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginEnd="15dp"
+                android:ems="10"
+                android:fontFamily="@font/elmessiri"
+                android:gravity="center"
+                android:hint="اسم العميل"
+                android:inputType="textPersonName"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/txtNameClinet"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="115dp"
+            android:layout_marginRight="10dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/txtTypeClinet"
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="0dp"
+                android:fontFamily="@font/elmessiri"
+                android:gravity="center"
+                android:text="الشغل"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Spinner
+                android:id="@+id/spinner"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_marginEnd="15dp"
+                android:layout_weight="1" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="170dp"
+            android:layout_marginRight="10dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/txtDebit"
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="0dp"
+                android:fontFamily="@font/elmessiri"
+                android:gravity="center"
+                android:text="عليه"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <EditText
+                android:id="@+id/edDebit"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginEnd="15dp"
+                android:ems="10"
+                android:fontFamily="@font/elmessiri"
+                android:gravity="center"
+                android:hint="عليه سابق - مدين"
+                android:inputType="number" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="225dp"
+            android:layout_marginRight="10dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/txtCredit"
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="0dp"
+                android:fontFamily="@font/elmessiri"
+                android:gravity="center"
+                android:text="له"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <EditText
+                android:id="@+id/edCredit"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginEnd="15dp"
+                android:ems="10"
+                android:fontFamily="@font/elmessiri"
+                android:gravity="center"
+                android:hint="له سابق - دائن"
+                android:inputType="number" />
+
+        </LinearLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="410dp"
+        android:layout_marginRight="10dp"
+        android:padding="10dp">
+
+        <android.widget.Button
+            android:id="@+id/btnsaveAddClient"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="80dp"
+            android:layout_marginRight="80dp"
+            android:background="@drawable/background_200"
+            android:fontFamily="@font/elmessiri"
+            android:foregroundGravity="center"
+            android:gravity="center"
+            android:text="@string/save"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textDirection="rtl"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+
+    </LinearLayout>
+</FrameLayout>

@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    >
+
+    <ImageView
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:src="@drawable/client"
+        android:id="@+id/clientImage"
+         />
+
+    <TextView
+        android:id="@+id/NameClient"
+        style="@style/MaterialAlertDialog.MaterialComponents.Title.Text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="5dp"
+        android:textColor="#000"
+        android:layout_toEndOf="@id/clientImage"
+        android:fontFamily="@font/elmessiri"
+        android:text="Name Client" />
+
+    <ImageView
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_below="@+id/NameClient"
+        android:layout_marginStart="5dp"
+        android:src="@drawable/ic_debit"
+        android:layout_marginTop="12dp"
+        android:id="@+id/image_debit_ic"
+        android:layout_toEndOf="@id/clientImage" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="له"
+        android:layout_below="@id/NameClient"
+        android:layout_marginRight="3dp"
+        android:layout_marginTop="13dp"
+        android:textColor="#000"
+        android:id="@+id/txtbalancd"
+        android:layout_toEndOf="@id/image_debit_ic"
+        />
+
+    <TextView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtBalanecfirstD"
+        android:layout_toEndOf="@id/txtbalancd"
+        android:layout_marginStart="5dp"
+        android:text="0.00"
+        android:padding="2dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/NameClient"
+        />
+    <ImageView
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_below="@+id/NameClient"
+        android:layout_marginStart="5dp"
+        android:src="@drawable/ic_cridt"
+        android:layout_marginTop="12dp"
+        android:id="@+id/image_credit_ic"
+        android:layout_toEndOf="@+id/txtBalanecfirstD" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="عليه"
+        android:layout_below="@id/NameClient"
+        android:layout_marginRight="3dp"
+        android:layout_marginTop="13dp"
+        android:textColor="#000"
+        android:id="@+id/txtTitleBalencFC"
+        android:layout_toEndOf="@id/image_credit_ic"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtBalanecfirstC"
+        android:layout_toEndOf="@id/txtTitleBalencFC"
+        android:layout_marginStart="2dp"
+        android:text="0.00"
+        android:padding="2dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/NameClient"
+        />
+    <ImageView
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_below="@+id/NameClient"
+        android:layout_marginStart="5dp"
+        android:src="@drawable/ic_now_balance"
+        android:layout_marginTop="12dp"
+        android:id="@+id/image_now_balance"
+        android:layout_toEndOf="@+id/txtBalanecfirstC" />
+
+    <TextView
+        android:id="@+id/txtTitleBalencnow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/NameClient"
+        android:layout_marginTop="13dp"
+        android:layout_marginRight="20dp"
+        android:text="الحالي"
+        android:textColor="#000" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtBalanecnow"
+        android:layout_toEndOf="@id/txtTitleBalencnow"
+        android:layout_marginStart="10dp"
+        android:text="0.00"
+        android:padding="2dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        />
+
+    <TextView
+        android:id="@+id/txtBalanecType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="10dp"
+        android:padding="2dp"
+        android:text="" />
+</RelativeLayout>

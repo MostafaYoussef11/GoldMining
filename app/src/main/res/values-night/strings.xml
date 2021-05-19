@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+        <string name="app_name">Gold Mining</string>
+        <string name="eror_image">Error Image</string>
+        <string name="manage">الطاحونة</string>
+        <string name="titleApp">تسجيل الدخول</string>
+        <string name="edusername">ادخل اسم المستخدم</string>
+        <string name="edpassword">ادخل الرقم السري</string>
+        <string name="remmber">حفظ البيانات</string>
+        <string name="person">person</string>
+        <string name="clinet">clinet</string>
+        <string name="cl">العملاء</string>
+</resources>
